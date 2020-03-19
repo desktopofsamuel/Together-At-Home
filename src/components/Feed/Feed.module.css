@@ -14,6 +14,9 @@
  * Line-Height
  */
 .feed__item {
+  background-color: #203c5f;
+  padding: 16px;
+  border-radius: 8px;
   margin-bottom: 32.5px;
 }
 
@@ -22,14 +25,14 @@
 }
 
 .feed__item-title {
-  font-size: 27px;
+  font-size: 24px;
   line-height: 39px;
   margin-top: 0px;
   margin-bottom: 13px;
 }
 
 .feed__item-title-link {
-  color: #222;
+  color: #f3f3ff;
 }
 
 .feed__item-title-link:hover, .feed__item-title-link:focus {
@@ -38,7 +41,8 @@
 }
 
 .feed__item-description {
-  font-size: 16px;
+  font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #bccbde;
   line-height: 26px;
   margin-bottom: 19.5px;
 }
@@ -56,7 +60,9 @@
 
 .feed__item-meta-category-link {
   font-size: 14px;
-  color: #F7A046;
+  font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  letter-spacing: 1px;
+  color: #bccbde;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -67,7 +73,10 @@
 
 .feed__item-readmore {
   font-size: 16px;
-  color: #5D93FF;
+  color: #f3f3ff;
+  background-color: #59D876;
+  padding: 8px 16px;
+  border-radius: 4px;
 }
 
 .feed__item-readmore:hover, .feed__item-readmore:focus {
