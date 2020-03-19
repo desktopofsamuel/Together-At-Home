@@ -35,6 +35,7 @@ const Layout = ({
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
+        <link href="https://fonts.googleapis.com/css?family=Poppins:700,800|Roboto+Mono&display=swap" rel="stylesheet"/>
       </Helmet>
       {children}
     </div>
