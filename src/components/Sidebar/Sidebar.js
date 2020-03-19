@@ -1,18 +1,15 @@
 // @flow strict
 import React from 'react';
-import styles from './Sidebar.module.scss';
 import { Link } from 'gatsby';
-import { useSiteMetadata } from '../../hooks';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuestionCircle } from '@fortawesome/pro-duotone-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuestionCircle } from '@fortawesome/pro-duotone-svg-icons';
+import styles from './Sidebar.module.scss';
 
 type Props = {
   isIndex?: boolean,
 };
 
 const Sidebar = ({ isIndex }: Props) => {
-  const { author, copyright, menu } = useSiteMetadata();
-
   return (
     <aside className={styles['sidebar']}>
       <div className={styles['sidebar__inner']}>

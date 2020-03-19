@@ -28,7 +28,7 @@ describe('Feed', () => {
           },
           id: 'test-123',
           html: '<p>test</p>',
-          url:'https://www.apple.com',
+          url: 'https://www.apple.com',
           deadLine: 'test'
 
         }
