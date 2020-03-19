@@ -17,6 +17,8 @@
   background-color: #203c5f;
   padding: 16px;
   border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
   margin-bottom: 32.5px;
 }
 
@@ -73,14 +75,24 @@
 
 .feed__item-readmore {
   font-size: 16px;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   color: #f3f3ff;
-  background-color: #59D876;
+  background-color: #30ce54;
   padding: 8px 16px;
   border-radius: 4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .feed__item-readmore:hover, .feed__item-readmore:focus {
-  color: #5D93FF;
+  color: #f3f3ff;
+  background-color: #2bb94c;
   border-bottom: 1px solid #5D93FF;
+}
+
+.feed__item-deadline {
+  color: #617794;
+  display: inline-block;
+  margin-left: 16px;
 }
 /*# sourceMappingURL=Feed.module.css.map */

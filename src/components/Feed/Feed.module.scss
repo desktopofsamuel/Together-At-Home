@@ -2,10 +2,13 @@
 @import '../../assets/scss/mixins';
 
 .feed {
+
   &__item {
     background-color: $color-blue-400;
     padding: 16px;
     border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
     @include margin-bottom(1.25);
 
     &:last-child {
@@ -72,17 +75,26 @@
 
     &-readmore {
       font-size: $typographic-base-font-size;
+      font-family: $primary-font-family;
       color: $color-blue-100;
       background-color: $color-secondary;
       padding: 8px 16px;
-      border-radius: 4px;;
+      border-radius: 4px;
+      transition: $transition-ease;
 
       &:hover,
       &:focus {
-        color: $color-primary;
+        color: $color-blue-100;
+        background-color: darken($color-secondary, 5%);
         border-bottom: 1px solid $color-primary;
       }
 
+    }
+
+    &-deadline {
+      color: $color-blue-300;
+      display: inline-block;
+      margin-left: 16px;
     }
 
   }

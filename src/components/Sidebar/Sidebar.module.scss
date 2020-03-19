@@ -1,2 +1,39 @@
 @import '../../assets/scss/variables';
 @import '../../assets/scss/mixins';
+
+.sidebar {
+    display: block;
+    background-color: $color-blue-600;
+    padding: 16px 24px;
+
+    &__inner {
+        &-title {
+            @include margin-top(1);
+
+            &::before {
+                content: '';
+                display: block;
+                margin-bottom: 24px;
+                height: 8px;
+                background-color: $color-blue-100;
+                width: 64px;
+            }
+        }
+
+        &-subtitle {
+            font-family: $secondary-font-family;
+            font-size: 14px;
+            color: $color-blue-200;
+            @include line-height(1.2);
+            
+        }
+    }
+}
+
+@include breakpoint-sm {
+    .sidebar {
+        position: fixed;
+        width: 25vw;
+        height: 100vh;
+    }
+}

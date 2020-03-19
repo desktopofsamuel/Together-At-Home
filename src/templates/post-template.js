@@ -29,6 +29,7 @@ export const query = graphql`
   query PostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
+      excerpt
       html
       fields {
         slug
@@ -39,7 +40,10 @@ export const query = graphql`
         description
         tags
         title
+        url
         socialImage
+        endDate
+        deadLine
       }
     }
   }

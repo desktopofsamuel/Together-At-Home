@@ -18,6 +18,16 @@ html {
 }
 
 .layout {
-  lost-center: 1070px;
+  display: block;
+}
+
+@media screen and (min-width: 685px) {
+  .layout {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25vw auto;
+        grid-template-columns: 25vw auto;
+    grid-gap: 24px;
+  }
 }
 /*# sourceMappingURL=Layout.module.css.map */

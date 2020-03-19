@@ -14,6 +14,9 @@
  * Line-Height
  */
 .page {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  width: 100%;
   margin-bottom: 52px;
 }
 
@@ -36,18 +39,12 @@
 }
 
 @media screen and (min-width: 685px) {
-  .page {
-    lost-column: 7/12;
-  }
   .page__inner {
     padding: 30px 20px;
   }
 }
 
 @media screen and (min-width: 960px) {
-  .page {
-    lost-column: 2/3;
-  }
   .page__inner {
     padding: 40px 35px;
   }

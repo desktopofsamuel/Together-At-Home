@@ -55,6 +55,8 @@ export const query = graphql`
       ){
       edges {
         node {
+          html
+          excerpt
           fields {
             slug
             categorySlug
@@ -64,6 +66,10 @@ export const query = graphql`
             date
             category
             description
+            url
+            socialImage
+            endDate
+            deadLine
           }
         }
       }
