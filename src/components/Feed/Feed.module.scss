@@ -24,10 +24,12 @@
 
       &-link {
         color: $color-blue-100;
+        transition: $transition-ease;
+        border-bottom: 2px solid rgba(20,60,95,0);
         &:hover,
         &:focus {
-          color: $color-base;
-          border-bottom: 1px solid $color-base;
+          color: $color-blue-100;
+          border-bottom: 2px solid $color-blue-100;
         }
 
       }
@@ -86,7 +88,6 @@
       &:focus {
         color: $color-blue-100;
         background-color: darken($color-secondary, 5%);
-        border-bottom: 1px solid $color-primary;
       }
 
     }
@@ -99,4 +100,14 @@
 
   }
 
+}
+
+@include breakpoint-lg {
+  .feed {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    }
+  
 }

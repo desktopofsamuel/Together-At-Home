@@ -27,7 +27,7 @@ const CategoryTemplate = ({ data, pageContext }: Props) => {
   } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `${category} - Page ${currentPage} - ${siteTitle}` : `${category} - ${siteTitle}`;
+  const pageTitle = currentPage > 0 ? `Best ${category} - Page ${currentPage} - ${siteTitle}` : `Best ${category} Resources - ${siteTitle}`;
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
@@ -55,6 +55,8 @@ export const query = graphql`
       ){
       edges {
         node {
+          html
+          excerpt
           fields {
             categorySlug
             slug
@@ -64,6 +66,7 @@ export const query = graphql`
             description
             category
             title
+            url
           }
         }
       }

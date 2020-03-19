@@ -2,12 +2,18 @@
 @import '../../assets/scss/mixins';
 
 .sidebar {
-    display: block;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: $color-blue-600;
     padding: 16px 24px;
+    
 
     &__inner {
+
         &-title {
+            color: $color-blue-100;
             @include margin-top(1);
 
             &::before {
@@ -18,6 +24,10 @@
                 background-color: $color-blue-100;
                 width: 64px;
             }
+
+            &:hover {
+                color: $color-blue-100;
+            }
         }
 
         &-subtitle {
@@ -25,7 +35,27 @@
             font-size: 14px;
             color: $color-blue-200;
             @include line-height(1.2);
+
             
+        }
+    }
+
+    &__footer {
+        &-report {
+            font-size: 14px;
+            padding: 16px 16px 16px 0;
+            transition: $transition-ease;
+            border-radius: 8px;
+            cursor: pointer;
+            display: inline-grid;
+            grid-auto-flow: column;
+            grid-gap: 8px;
+
+            &:hover {
+                padding: 16px 16px 16px 16px;
+                color: $color-blue-100;
+                background-color: $color-blue-400;
+            }
         }
     }
 }
@@ -33,7 +63,8 @@
 @include breakpoint-sm {
     .sidebar {
         position: fixed;
-        width: 25vw;
         height: 100vh;
+        width: 22vw;
+        left: 0;
     }
 }

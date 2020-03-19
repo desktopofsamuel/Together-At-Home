@@ -35,11 +35,14 @@
 
 .feed__item-title-link {
   color: #f3f3ff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid rgba(20, 60, 95, 0);
 }
 
 .feed__item-title-link:hover, .feed__item-title-link:focus {
-  color: #222;
-  border-bottom: 1px solid #222;
+  color: #f3f3ff;
+  border-bottom: 2px solid #f3f3ff;
 }
 
 .feed__item-description {
@@ -87,12 +90,21 @@
 .feed__item-readmore:hover, .feed__item-readmore:focus {
   color: #f3f3ff;
   background-color: #2bb94c;
-  border-bottom: 1px solid #5D93FF;
 }
 
 .feed__item-deadline {
   color: #617794;
   display: inline-block;
   margin-left: 16px;
+}
+
+@media screen and (min-width: 1100px) {
+  .feed {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+  }
 }
 /*# sourceMappingURL=Feed.module.css.map */

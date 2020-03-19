@@ -1,7 +1,10 @@
 // @flow strict
 import React from 'react';
 import styles from './Sidebar.module.scss';
+import { Link } from 'gatsby';
 import { useSiteMetadata } from '../../hooks';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faQuestionCircle } from '@fortawesome/pro-duotone-svg-icons'
 
 type Props = {
   isIndex?: boolean,
@@ -13,8 +16,11 @@ const Sidebar = ({ isIndex }: Props) => {
   return (
     <aside className={styles['sidebar']}>
       <div className={styles['sidebar__inner']}>
-        <h1 className={styles['sidebar__inner-title']}>Together At Home</h1>
+        <Link to="/"><h1 className={styles['sidebar__inner-title']}>Together At Home Club</h1></Link>
         <h2 className={styles['sidebar__inner-subtitle']}>Free resources offered around the world encourage you to stay at home.</h2>
+      </div>
+      <div className={styles['sidebar__footer']}>
+        <a className={styles['sidebar__footer-report']} href="https://forms.gle/V1irZN92423dv83n7" target="_blank" ><div><FontAwesomeIcon icon={faQuestionCircle} size="36px" /></div>Submit Your Resource</a>
       </div>
     </aside>
   );

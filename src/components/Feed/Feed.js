@@ -23,16 +23,16 @@ const Feed = ({ edges }: Props) => (
           </span>
         </div>
         <h2 className={styles['feed__item-title']}>
-          <Link className={styles['feed__item-title-link']} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
+          <a className={styles['feed__item-title-link']} href={`${edge.node.frontmatter.url}?ref=TogetherAtHomeClub`} target="_blank">{edge.node.frontmatter.title}</a>
         </h2>
         <div
               className={styles["feed__item-description"]}
               dangerouslySetInnerHTML={{
-                __html: `${edge.node.html}`
+                __html: `${edge.node.html}` 
               }}
             />
 
-        <a className={styles['feed__item-readmore']} href={edge.node.frontmatter.url}>Read More →</a>
+        <a className={styles['feed__item-readmore']} href={`${edge.node.frontmatter.url}?ref=TogetherAtHomeClub`} target="_blank">View More →</a>
         <p className={styles['feed__item-deadline']}>{edge.node.frontmatter.deadLine}</p>
       </div>
     ))}
