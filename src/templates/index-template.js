@@ -68,8 +68,6 @@ export const query = graphql`
             description
             url
             socialImage
-            endDate
-            deadLine
           }
         }
       }

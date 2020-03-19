@@ -34,7 +34,9 @@ export type Node = {
     category?: string,
     tags?: string[],
     title: string,
-    socialImage?: string
+    socialImage?: string,
+    url?: string,
+    deadLine?: string
   },
   html: string,
   id: string

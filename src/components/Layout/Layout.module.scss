@@ -12,7 +12,6 @@ html {
 @include breakpoint-sm {
 .layout {
     display: grid;
-    grid-template-columns: 25vw auto;
-    grid-gap: 24px;
+    grid-template-columns: 26vw auto;
 }
 }

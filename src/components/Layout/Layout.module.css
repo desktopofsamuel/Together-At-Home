@@ -25,9 +25,8 @@ html {
   .layout {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 25vw auto;
-        grid-template-columns: 25vw auto;
-    grid-gap: 24px;
+    -ms-grid-columns: 26vw auto;
+        grid-template-columns: 26vw auto;
   }
 }
 /*# sourceMappingURL=Layout.module.css.map */
