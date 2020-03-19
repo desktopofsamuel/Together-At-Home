@@ -65,7 +65,7 @@ module.exports = {
               date: edge.node.frontmatter.date,
               url: site.siteMetadata.site_url + edge.node.fields.slug,
               guid: site.siteMetadata.site_url + edge.node.fields.slug,
-              custom_elements: [{ 'content:encoded': edge.node.html }]
+              custom_elements: [{ 'content:encoded': edge.node.html + edge.node.frontmatter.url }]
             }))
           ),
           query: `
@@ -87,6 +87,7 @@ module.exports = {
                         template
                         draft
                         description
+                        url
                       }
                     }
                   }
@@ -185,9 +186,9 @@ module.exports = {
         short_name: siteConfig.title,
         start_url: '/',
         background_color: '#FFF',
-        theme_color: '#F7A046',
+        theme_color: '#30ce54',
         display: 'standalone',
-        icon: 'static/photo.jpg'
+        icon: 'static/Favicon.png'
       },
     },
     'gatsby-plugin-offline',
