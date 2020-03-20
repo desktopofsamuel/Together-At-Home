@@ -6,7 +6,7 @@ module.exports = {
   title: 'Together At Home Club | Collection Of Free Resources To Keep You Staying At Home ',
   shorttitle: 'Together At Home Club',
   subtitle: 'Collection of free and discounted resources to keep you staying at home. Generously offered by companies and creators around the world in the midst of COVID-19 outbreak.',
-  copyright: '© All rights reserved.',
+  copyright: 'Copyright Ⓒ 2020 TgtAtHome.Club',
   disqusShortname: '',
   postsPerPage: 10,
   googleAnalyticsId: 'UA-161402577-1',

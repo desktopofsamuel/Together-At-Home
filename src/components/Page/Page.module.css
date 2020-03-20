@@ -16,7 +16,7 @@
 .page {
   -ms-grid-column: 2;
       grid-column-start: 2;
-  width: minmax(600px, 480px);
+  max-width: 600px;
   margin: 0 auto;
   margin-bottom: 52px;
 }

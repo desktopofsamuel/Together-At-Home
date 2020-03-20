@@ -3,7 +3,7 @@
 
 .page {
   grid-column-start: 2;
-  width: minmax(600px, 480px);
+  max-width: 600px;
   margin: 0 auto;
   @include margin-bottom(2);
 
