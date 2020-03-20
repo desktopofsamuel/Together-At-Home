@@ -37,7 +37,7 @@ const Layout = ({
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
         <meta name="publisher" content={shorttitle} />
-        <link href="https://fonts.googleapis.com/css?family=Poppins:700,800|Roboto+Mono:600,800&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet"/>
         <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="m9oiINk" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#5F7FFF" data-position="right" data-x_margin="18" data-y_margin="18"></script>
       </Helmet>
       {children}
