@@ -67,7 +67,23 @@
 }
 
 .sidebar__footer-report:hover {
-  padding: 16px 16px 16px 16px;
+  padding: 16px;
+  color: #f3f3ff;
+  background-color: #203c5f;
+}
+
+.sidebar__footer-credit {
+  font-size: 12px;
+}
+
+.sidebar__footer-credit a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.sidebar__footer-credit:hover a {
+  padding: 8px;
   color: #f3f3ff;
   background-color: #203c5f;
 }

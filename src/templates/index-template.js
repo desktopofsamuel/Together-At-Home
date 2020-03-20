@@ -67,8 +67,14 @@ export const query = graphql`
             category
             description
             url
-            socialImage
             deadLine
+            socialImage {
+              childImageSharp {
+                fluid(maxHeight: 500) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

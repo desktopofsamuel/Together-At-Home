@@ -19,15 +19,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/content`,
-        name: 'pages'
+        path: `${__dirname}/static/media`,
+        name: 'media'
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/static/media`,
-        name: 'media'
+        path: `${__dirname}/content`,
+        name: 'pages'
       }
     },
     {
@@ -100,6 +100,8 @@ module.exports = {
         }]
       }
     },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -131,8 +133,6 @@ module.exports = {
         ]
       }
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-netlify-cms',

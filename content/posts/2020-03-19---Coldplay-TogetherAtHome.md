@@ -10,7 +10,7 @@ tags:
   - "Coldplay"
   - "Chris Martin"
 url: "https://www.youtube.com/watch?v=YMBK9OfsKO4"
-socialImage: "/media/42-line-bible.jpg"
+socialImage: "/media/coldplay-concert.jpg"
 ---
 
 Chris Martin from Coldplay, performed live at home . Songs he played included "A Sky Full of Stars", "Green Eyes" on acoustic guitar and, on the piano, the popular classic "Clocks" and "Viva La Vida".

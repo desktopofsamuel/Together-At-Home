@@ -8,7 +8,7 @@ category: "Documentary"
 tags:
   - "Documentary"
 url: "https://www.ohyouprettythings.com/free"
-socialImage: "/media/42-line-bible.jpg"
+socialImage: "/media/helvetica.jpg"
 endDate: "2020-03-24T23:59:00.169Z"
 deadLine: "Mar 17 - 24"
 ---

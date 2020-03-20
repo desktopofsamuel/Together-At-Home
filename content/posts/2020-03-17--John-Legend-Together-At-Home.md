@@ -9,7 +9,7 @@ tags:
   - "Music"
   - "John Legend"   
 url: "https://www.youtube.com/watch?v=I2NTcBmQkjw"
-socialImage: "/media/42-line-bible.jpg"
+socialImage: "/media/johnlegend-concert.jpg"
 ---
 
 John Legend follows on the #TogetherAtHome series, livestreaming at home to support World Health Organization (WHO) and Global Citizen. 

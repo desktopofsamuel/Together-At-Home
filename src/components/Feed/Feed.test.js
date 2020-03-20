@@ -24,7 +24,8 @@ describe('Feed', () => {
               'test-1',
               'test-2'
             ],
-            title: 'test_0'
+            title: 'test_0',
+            socialImage: '/media/adobecc.png'
           },
           id: 'test-123',
           html: '<p>test</p>',
@@ -53,7 +54,8 @@ describe('Feed', () => {
             ],
             title: 'test_1',
             url: 'https://www.apple.com',
-            deadLine: 'test'
+            deadLine: 'test',
+            socialImage: '/media/adobecc.png'
           },
           id: 'test-321',
           html: '<p>test</p>'
