@@ -66,7 +66,8 @@ module.exports = {
               date: edge.node.frontmatter.date,
               url: site.siteMetadata.site_url + edge.node.fields.slug,
               guid: site.siteMetadata.site_url + edge.node.fields.slug,
-              custom_elements: [{ 'content:encoded': edge.node.html + edge.node.frontmatter.url }]
+              image: site.siteMetadata.site_url + edge.node.frontmatter.socialImage.publicURL,
+              custom_elements: [{ 'content:encoded': edge.node.frontmatter.url + edge.node.html }]
             }))
           ),
           query: `
@@ -89,6 +90,9 @@ module.exports = {
                         draft
                         description
                         url
+                        socialImage {
+                          publicURL
+                        }
                       }
                     }
                   }
