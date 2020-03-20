@@ -3,12 +3,13 @@
 module.exports = {
   url: 'https://together-at-home.netlify.com',
   pathPrefix: '/',
-  title: 'Together At Home Club',
-  subtitle: 'Free and discounted resources hub offered by start-ups and makers during COVID-19 outbreak to keep you at home.',
+  title: 'Together At Home Club | Collection Of Free Resources To Keep You Staying At Home ',
+  shorttitle: 'Together At Home Club',
+  subtitle: 'Collection of free and discounted resources to keep you staying at home. Generously offered by companies and creators around the world in the midst of COVID-19 outbreak.',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 10,
-  googleAnalyticsId: '',
+  googleAnalyticsId: 'UA-161402577-1',
   useKatex: false,
   menu: [
     {
@@ -25,9 +26,9 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Together At Home Club',
+    photo: '/Favicon.png',
+    bio: 'Collection of free and discounted resources to keep you staying at home. Generously offered by companies and creators around the world in the midst of COVID-19 outbreak.',
     contacts: {
       email: '',
       facebook: '#',

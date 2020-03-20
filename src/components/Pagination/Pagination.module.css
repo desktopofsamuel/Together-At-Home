@@ -26,7 +26,8 @@
 }
 
 .pagination__prev-link {
-  color: #30ce54;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #bccbde;
   font-size: 26px;
   font-weight: bold;
 }
@@ -46,7 +47,8 @@
 }
 
 .pagination__next-link {
-  color: #30ce54;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #bccbde;
   font-size: 26px;
   font-weight: bold;
 }

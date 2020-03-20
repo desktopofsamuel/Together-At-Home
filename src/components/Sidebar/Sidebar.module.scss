@@ -8,7 +8,6 @@
     justify-content: space-around;
     background-color: $color-blue-600;
     padding: 16px 24px;
-    
 
     &__inner {
 
@@ -52,7 +51,22 @@
             grid-gap: 8px;
 
             &:hover {
-                padding: 16px 16px 16px 16px;
+                padding: 16px;
+                color: $color-blue-100;
+                background-color: $color-blue-400;
+            }
+        }
+
+        &-credit {
+            font-size: 12px;
+
+            a {
+            transition: $transition-ease;
+            border-radius: 8px;
+            }
+
+            &:hover a {
+                padding: 8px;
                 color: $color-blue-100;
                 background-color: $color-blue-400;
             }

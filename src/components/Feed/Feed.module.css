@@ -19,37 +19,30 @@
   border-radius: 8px;
   max-width: 600px;
   margin: 0 auto;
-  margin-bottom: 32.5px;
+  margin-bottom: 26px;
 }
 
 .feed__item:last-child {
   margin-bottom: 13px;
 }
 
-.feed__item-title {
-  font-size: 24px;
-  line-height: 39px;
-  margin-top: 0px;
-  margin-bottom: 13px;
-}
-
-.feed__item-title-link {
-  color: #f3f3ff;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  border-bottom: 2px solid rgba(20, 60, 95, 0);
-}
-
-.feed__item-title-link:hover, .feed__item-title-link:focus {
-  color: #f3f3ff;
-  border-bottom: 2px solid #f3f3ff;
-}
-
 .feed__item-description {
+  font-size: 14px;
   font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   color: #bccbde;
-  line-height: 26px;
-  margin-bottom: 19.5px;
+}
+
+.feed__item-description p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.feed__item-meta {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "category thumbnail" "title thumbnail";
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
 }
 
 .feed__item-meta-time {
@@ -61,6 +54,23 @@
 
 .feed__item-meta-divider {
   margin: 0 5px;
+}
+
+.feed__item-meta-thumbnail {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: thumbnail;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.feed__item-meta-category {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: category;
 }
 
 .feed__item-meta-category-link {
@@ -76,13 +86,36 @@
   color: #5D93FF;
 }
 
-.feed__item-readmore {
-  font-size: 16px;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+.feed__item-meta-title {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: title;
+  font-size: 24px;
+  line-height: 36.4px;
+  margin-top: 0px;
+  margin-bottom: 13px;
+}
+
+.feed__item-meta-title-link {
   color: #f3f3ff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 2px solid rgba(20, 60, 95, 0);
+}
+
+.feed__item-meta-title-link:hover, .feed__item-meta-title-link:focus {
+  color: #f3f3ff;
+  border-bottom: 2px solid #f3f3ff;
+}
+
+.feed__item-readmore {
+  display: inline-block;
   background-color: #30ce54;
   padding: 8px 16px;
   border-radius: 4px;
+  font-size: 16px;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #f3f3ff;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -105,6 +138,9 @@
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 16px;
+  }
+  .feed__item {
+    margin-bottom: 0px;
   }
 }
 /*# sourceMappingURL=Feed.module.css.map */

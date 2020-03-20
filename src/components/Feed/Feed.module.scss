@@ -9,41 +9,31 @@
     border-radius: 8px;
     max-width: 600px;
     margin: 0 auto;
-    @include margin-bottom(1.25);
+    @include margin-bottom(1);
 
     &:last-child {
       @include margin-bottom(.5);
     }
 
-    &-title {
-      font-size: $typographic-base-font-size * 1.5;
-      
-      @include line-height(1.5);
-      @include margin-top(0);
-      @include margin-bottom(.5);
 
-      &-link {
-        color: $color-blue-100;
-        transition: $transition-ease;
-        border-bottom: 2px solid rgba(20,60,95,0);
-        &:hover,
-        &:focus {
-          color: $color-blue-100;
-          border-bottom: 2px solid $color-blue-100;
-        }
+    &-description {
+      font-size: 14px;
+      font-family: $secondary-font-family;
+      color: $color-blue-200;
 
+      & p { 
+        @include margin-bottom(0);
+        @include margin-top(0);
       }
 
     }
 
-    &-description {
-      font-family: $secondary-font-family;
-      color: $color-blue-200;
-      @include line-height(1);
-      @include margin-bottom(.75);
-    }
-
     &-meta {
+
+      display: grid;
+      grid-template-areas: "category thumbnail" "title thumbnail";
+      grid-template-columns: auto auto;
+
       &-time {
         font-size: $typographic-small-font-size;
         color: $color-base;
@@ -55,7 +45,16 @@
         margin: 0 5px;
       }
 
+      &-thumbnail {
+        grid-area: thumbnail;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+
       &-category {
+        grid-area: category; 
         &-link {
           font-size: $typographic-small-font-size;
           font-family: $secondary-font-family;
@@ -68,28 +67,49 @@
           &:focus {
             color: $color-primary;
           }
-
         }
+      }
 
+      &-title {
+        grid-area: title;
+        font-size: $typographic-base-font-size * 1.5;
+        
+        @include line-height(1.4);
+        @include margin-top(0);
+        @include margin-bottom(.5);
+  
+        &-link {
+          color: $color-blue-100;
+          transition: $transition-ease;
+          border-bottom: 2px solid rgba(20,60,95,0);
+          &:hover,
+          &:focus {
+            color: $color-blue-100;
+            border-bottom: 2px solid $color-blue-100;
+          }
+  
+        }
       }
 
     }
 
     &-readmore {
-      font-size: $typographic-base-font-size;
-      font-family: $primary-font-family;
-      color: $color-blue-100;
+      display: inline-block;
       background-color: $color-secondary;
       padding: 8px 16px;
       border-radius: 4px;
+      font-size: $typographic-base-font-size;
+      font-family: $primary-font-family;
+      color: $color-blue-100;
       transition: $transition-ease;
 
+      
+
       &:hover,
-      &:focus {
+        &:focus {
         color: $color-blue-100;
         background-color: darken($color-secondary, 5%);
       }
-
     }
 
     &-deadline {
@@ -104,10 +124,12 @@
 
 @include breakpoint-lg {
   .feed {
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 16px;
+
+    &__item {
+    @include margin-bottom(0);
     }
-  
+  }
 }

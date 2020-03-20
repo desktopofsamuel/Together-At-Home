@@ -9,6 +9,7 @@ module.exports = {
     url: siteConfig.url,
     title: siteConfig.title,
     subtitle: siteConfig.subtitle,
+    shorttitle: siteConfig.shorttitle,
     copyright: siteConfig.copyright,
     disqusShortname: siteConfig.disqusShortname,
     menu: siteConfig.menu,
@@ -18,15 +19,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/content`,
-        name: 'pages'
+        path: `${__dirname}/static/media`,
+        name: 'media'
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/static/media`,
-        name: 'media'
+        path: `${__dirname}/content`,
+        name: 'pages'
       }
     },
     {
@@ -65,7 +66,7 @@ module.exports = {
               date: edge.node.frontmatter.date,
               url: site.siteMetadata.site_url + edge.node.fields.slug,
               guid: site.siteMetadata.site_url + edge.node.fields.slug,
-              custom_elements: [{ 'content:encoded': edge.node.html }]
+              custom_elements: [{ 'content:encoded': edge.node.html + edge.node.frontmatter.url }]
             }))
           ),
           query: `
@@ -87,6 +88,7 @@ module.exports = {
                         template
                         draft
                         description
+                        url
                       }
                     }
                   }
@@ -98,6 +100,8 @@ module.exports = {
         }]
       }
     },
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -129,8 +133,6 @@ module.exports = {
         ]
       }
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-netlify-cms',
@@ -182,12 +184,12 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: siteConfig.title,
-        short_name: siteConfig.title,
+        short_name: siteConfig.shorttitle,
         start_url: '/',
         background_color: '#FFF',
-        theme_color: '#F7A046',
+        theme_color: '#30ce54',
         display: 'standalone',
-        icon: 'static/photo.jpg'
+        icon: 'static/Favicon.png'
       },
     },
     'gatsby-plugin-offline',
