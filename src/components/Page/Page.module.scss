@@ -3,7 +3,7 @@
 
 .page {
   grid-column-start: 2;
-  max-width: 600px;
+  width: 100%;
   margin: 0 auto;
   @include margin-bottom(2);
 
@@ -29,6 +29,7 @@
 
 @include breakpoint-sm {
   .page {
+    max-width: 600vw;
 
     &__inner {
       padding: 30px 20px;

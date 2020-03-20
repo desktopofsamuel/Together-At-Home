@@ -16,7 +16,7 @@
 .page {
   -ms-grid-column: 2;
       grid-column-start: 2;
-  max-width: 600px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 52px;
 }
@@ -39,7 +39,10 @@
   margin: 0px 0px 26px;
 }
 
-@media screen and (min-width: 685px) {
+@media screen and (min-width: 800px) {
+  .page {
+    max-width: 600vw;
+  }
   .page__inner {
     padding: 30px 20px;
   }

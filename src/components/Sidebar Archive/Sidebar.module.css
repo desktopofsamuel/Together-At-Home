@@ -22,7 +22,7 @@
   padding: 25px 20px 0;
 }
 
-@media screen and (min-width: 685px) {
+@media screen and (min-width: 800px) {
   .sidebar {
     lost-column: 5/12;
   }

@@ -30,6 +30,8 @@
 
 .sidebar__inner-title {
   color: #f3f3ff;
+  font-size: 32px;
+  line-height: 1.625;
   margin-top: 26px;
 }
 
@@ -50,6 +52,7 @@
   font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 14px;
   color: #bccbde;
+  line-height: 1.625;
   line-height: 31.2px;
 }
 
@@ -132,7 +135,7 @@
   background-color: #203c5f;
 }
 
-@media screen and (min-width: 685px) {
+@media screen and (min-width: 800px) {
   .sidebar {
     position: fixed;
     height: 100vh;
