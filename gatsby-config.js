@@ -66,7 +66,6 @@ module.exports = {
               date: edge.node.frontmatter.date,
               url: site.siteMetadata.site_url + edge.node.fields.slug,
               guid: site.siteMetadata.site_url + edge.node.fields.slug,
-              image: site.siteMetadata.site_url + edge.node.frontmatter.socialImage.publicURL,
               custom_elements: [{ 'content:encoded': edge.node.frontmatter.url + edge.node.html }]
             }))
           ),
