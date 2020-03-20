@@ -35,6 +35,7 @@ const useSiteMetadata = () => {
             }
             url
             title
+            shorttitle
             subtitle
             copyright
             disqusShortname

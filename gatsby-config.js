@@ -9,6 +9,7 @@ module.exports = {
     url: siteConfig.url,
     title: siteConfig.title,
     subtitle: siteConfig.subtitle,
+    shorttitle: siteConfig.shorttitle,
     copyright: siteConfig.copyright,
     disqusShortname: siteConfig.disqusShortname,
     menu: siteConfig.menu,
@@ -183,7 +184,7 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: siteConfig.title,
-        short_name: siteConfig.title,
+        short_name: siteConfig.shorttitle,
         start_url: '/',
         background_color: '#FFF',
         theme_color: '#30ce54',

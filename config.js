@@ -3,7 +3,8 @@
 module.exports = {
   url: 'https://together-at-home.netlify.com',
   pathPrefix: '/',
-  title: 'Together At Home Club | Collection Of Free And Discounted Resources To Keep You Staying At Home ',
+  title: 'Together At Home Club | Collection Of Free Resources To Keep You Staying At Home ',
+  shorttitle: 'Together At Home Club',
   subtitle: 'Collection of free and discounted resources to keep you staying at home. Generously offered by companies and creators around the world in the midst of COVID-19 outbreak.',
   copyright: '© All rights reserved.',
   disqusShortname: '',

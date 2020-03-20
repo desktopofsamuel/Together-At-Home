@@ -13,4 +13,4 @@ url: "https://www.youtube.com/watch?v=YMBK9OfsKO4"
 socialImage: "/media/42-line-bible.jpg"
 ---
 
-Chris Martin from Coldplay, performed 30 minutes live on Instagram at home. Songs he played included "A Sky Full of Stars", "Green Eyes" on acoustic guitar and, on the piano, the popular classic "Clocks" and "Viva La Vida".
+Chris Martin from Coldplay, performed live at home . Songs he played included "A Sky Full of Stars", "Green Eyes" on acoustic guitar and, on the piano, the popular classic "Clocks" and "Viva La Vida".
