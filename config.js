@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://together-at-home.netlify.com',
+  url: 'https://tgtathome.club',
   pathPrefix: '/',
   title: 'Together At Home Club | Collection Of Free Resources To Keep You Staying At Home ',
   shorttitle: 'Together At Home Club',
