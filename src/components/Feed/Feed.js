@@ -25,7 +25,7 @@ const Feed = ({ edges }: Props) => (
           ) : <span></span>
           }
           <h2 className={styles['feed__item-meta-title']}>
-           <a className={styles['feed__item-meta-title-link']} href={`${edge.node.frontmatter.url}?ref=TogetherAtHomeClub`} target="_blank">{edge.node.frontmatter.title}</a>
+           <a className={styles['feed__item-meta-title-link']} href={`${edge.node.frontmatter.url}?ref=TgtAtHomeClub`} target="_blank">{edge.node.frontmatter.title}</a>
           </h2>
         </div>
         <div
@@ -34,7 +34,7 @@ const Feed = ({ edges }: Props) => (
                 __html: `${edge.node.html}`
               }}
             />
-        <a className={styles['feed__item-readmore']} href={`${edge.node.frontmatter.url}?ref=TogetherAtHomeClub`} target="_blank">
+        <a className={styles['feed__item-readmore']} href={`${edge.node.frontmatter.url}?ref=TgtAtHomeClub`} target="_blank">
          View More →
         </a>
         <p className={styles['feed__item-deadline']}>{edge.node.frontmatter.deadLine}</p>
