@@ -1,0 +1,45 @@
+/** 
+ * Variables
+ */
+/**
+ * Breakpoints
+ */
+/**
+ * Margin
+ */
+/**
+ * Padding
+ */
+/**
+ * Line-Height
+ */
+.list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list:first-child {
+  padding-left: 0;
+}
+
+.list__item {
+  font-size: 14px;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-gap: 8px;
+  padding: 8px 16px 8px 0;
+  margin-right: 8px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.list__item:hover {
+  padding: 8px 16px;
+  background-color: #203c5f;
+  color: #f3f3ff;
+}
+/*# sourceMappingURL=CategoryList.module.css.map */

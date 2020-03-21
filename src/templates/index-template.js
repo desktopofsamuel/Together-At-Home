@@ -6,8 +6,10 @@ import Sidebar from '../components/Sidebar';
 import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
+import CategoryList from '../components/CategoryList';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
+/* import { faBellExclamation } from '@fortawesome/pro-duotone-svg-icons'; */
 
 type Props = {
   data: AllMarkdownRemark,
@@ -16,7 +18,6 @@ type Props = {
 
 const IndexTemplate = ({ data, pageContext }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-
   const {
     currentPage,
     hasNextPage,
@@ -25,7 +26,6 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
     nextPagePath
   } = pageContext;
 
-
   const { edges } = data.allMarkdownRemark;
   const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
 
@@ -33,6 +33,7 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
     <Layout title={pageTitle} description={siteSubtitle}>
       <Sidebar isIndex />
       <Page>
+        <CategoryList />
         <Feed edges={edges} />
         <Pagination
           prevPagePath={prevPagePath}

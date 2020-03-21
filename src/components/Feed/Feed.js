@@ -1,9 +1,10 @@
 // @flow strict
 import React from 'react';
 import { Link } from 'gatsby';
+import Img from 'gatsby-image';
 import type { Edges } from '../../types';
 import styles from './Feed.module.scss';
-import Img from 'gatsby-image';
+
 
 type Props = {
   edges: Edges
