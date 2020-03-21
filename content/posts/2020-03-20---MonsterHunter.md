@@ -4,7 +4,7 @@ date: "2020-03-20T09:40:32.169Z"
 template: "post"
 draft: false
 slug: "capcom-releases-monster-hunter-world-for-free-to-all-playstation-plus-members"
-category: "Game"
+category: "Games"
 tags:
   - "Game"
   - "Console"

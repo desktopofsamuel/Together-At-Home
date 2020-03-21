@@ -4,7 +4,7 @@ date: "2020-03-20T18:33:32.169Z"
 template: "post"
 draft: false
 slug: "free-access-to-cambridge-textbooks"
-category: "Education"
+category: "Books"
 tags:
   - "Cambridge"
   - "Textbooks"

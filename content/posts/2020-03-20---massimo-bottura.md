@@ -4,7 +4,7 @@ date: "2020-03-19T22:40:32.169Z"
 template: "post"
 draft: false
 slug: "learn-cooking-from-michelin-starred-chef-massimo-bottura"
-category: "Culinary"
+category: "Education"
 tags:
   - "Massimo Bottura"
   - "Cooking"

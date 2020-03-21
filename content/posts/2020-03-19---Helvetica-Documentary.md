@@ -4,7 +4,7 @@ date: "2020-03-19T22:40:32.169Z"
 template: "post"
 draft: false
 slug: "design-documentary-helvetica-available-for-free-streaming"
-category: "Documentary"
+category: "Movies"
 tags:
   - "Documentary"
   - "Design"
