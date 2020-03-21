@@ -15,9 +15,9 @@
  */
 .list {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  max-width: 600px;
+  margin: 16px 0 32px 0;
 }
 
 .list:first-child {
@@ -25,11 +25,8 @@
 }
 
 .list__item {
+  display: inline-block;
   font-size: 14px;
-  display: -ms-inline-grid;
-  display: inline-grid;
-  grid-auto-flow: column;
-  grid-gap: 8px;
   padding: 8px 16px 8px 0;
   margin-right: 8px;
   border-radius: 8px;
@@ -41,5 +38,13 @@
   padding: 8px 16px;
   background-color: #203c5f;
   color: #f3f3ff;
+}
+
+@media screen and (min-width: 960px) {
+  .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=CategoryList.module.css.map */

@@ -9,16 +9,15 @@ const CategoryList = () => {
   const categories = useCategoriesList();
 
   return (
-    <ul className={styles['list']}>
+    <div className={styles['list']}>
           {categories.map((category) => (
-            <li key={category.fieldValue}>
-              <Link className={styles['list__item']} to={`/category/${kebabCase(category.fieldValue)}/`}>
+
+              <Link className={styles['list__item']} key={category.fieldValue} to={`/category/${kebabCase(category.fieldValue)}/`}>
                 {category.fieldValue}
                 {/* ({category.totalCount}) */}
               </Link>
-            </li>
           ))}
-        </ul>
+        </div>
   );
 };
 
