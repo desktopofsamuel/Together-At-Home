@@ -110,7 +110,7 @@
 
 .feed__item-readmore {
   display: inline-block;
-  background-color: #30ce54;
+  background-color: #2bb94c;
   padding: 8px 16px;
   border-radius: 4px;
   font-size: 16px;
@@ -122,11 +122,11 @@
 
 .feed__item-readmore:hover, .feed__item-readmore:focus {
   color: #f3f3ff;
-  background-color: #2bb94c;
+  background-color: #26a444;
 }
 
 .feed__item-deadline {
-  color: #617794;
+  color: #bccbde;
   display: inline-block;
   margin-left: 16px;
 }

@@ -19,8 +19,8 @@ const Sidebar = ({ isIndex }: Props) => {
       </div>
       <div className={styles['sidebar__footer']}>
         <div className={styles['sidebar__footer-follow']}>
-          <a href="https://twitter.com/@tgtathomeclub"><div><FontAwesomeIcon icon={faTwitter}/></div><p>Twitter</p></a>
-          <a href="https://tgtathome.club/rss.xml"><div><FontAwesomeIcon icon={faRss}/></div><p>RSS</p></a>
+          <a href="https://twitter.com/@tgtathomeclub" aria-label="Twitter"><div><FontAwesomeIcon icon={faTwitter}/></div><p>Twitter</p></a>
+          <a href="https://tgtathome.club/rss.xml" aria-label="RSS"><div><FontAwesomeIcon icon={faRss}/></div><p>RSS</p></a>
         </div>
         <a className={styles['sidebar__footer-report']} href="https://forms.gle/V1irZN92423dv83n7" target="_blank" ><div><FontAwesomeIcon icon={faQuestionCircle} /></div>Submit Your Resource</a>
         <div className={styles['sidebar__footer-credit']}>Created by <a href="https://twitter.com/@desktopofsamuel" target="_blank">@desktopofsamuel</a></div>
