@@ -7,6 +7,7 @@ import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 import CategoryList from '../components/CategoryList';
+import socialImage from '../../static/OpenGraphImage.png';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
 /* import { faBellExclamation } from '@fortawesome/pro-duotone-svg-icons'; */
@@ -30,7 +31,7 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
   const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} - ${siteTitle}` : siteTitle;
 
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={siteSubtitle} socialImage={socialImage}>
       <Sidebar isIndex />
       <Page>
         <CategoryList />

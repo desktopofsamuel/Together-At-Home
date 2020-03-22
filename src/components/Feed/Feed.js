@@ -22,7 +22,7 @@ const Feed = ({ edges }: Props) => (
           <span className={styles['feed__item-meta-category']}>
             <Link to={edge.node.fields.categorySlug} className={styles['feed__item-meta-category-link']}>{edge.node.frontmatter.category} / </Link>
           </span>
-          {!!edge.node.frontmatter.socialImage && !!edge.node.frontmatter.socialImage.childImageSharp ? (<Img className={styles['feed__item-meta-thumbnail']} fluid={edge.node.frontmatter.socialImage.childImageSharp.fluid} />
+          {!!edge.node.frontmatter.socialImage && !!edge.node.frontmatter.socialImage.childImageSharp ? (<Img className={styles['feed__item-meta-thumbnail']} fluid={edge.node.frontmatter.socialImage.childImageSharp.fluid} title={edge.node.frontmatter.title} alt={edge.node.frontmatter.title} />
           ) : <span></span>
           }
           <h2 className={styles['feed__item-meta-title']}>

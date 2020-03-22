@@ -5,6 +5,7 @@ import kebabCase from 'lodash/kebabCase';
 import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
+import socialImage from '../../static/OpenGraphImage.png';
 import { useSiteMetadata, useCategoriesList } from '../hooks';
 
 const CategoriesListTemplate = () => {
@@ -12,7 +13,7 @@ const CategoriesListTemplate = () => {
   const categories = useCategoriesList();
 
   return (
-    <Layout title={`Categories - ${title}`} description={subtitle}>
+    <Layout title={`Categories - ${title}`} description={subtitle} socialImage={socialImage}>
       <Sidebar />
       <Page title="Categories">
         <ul>

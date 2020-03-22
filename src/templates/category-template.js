@@ -7,6 +7,7 @@ import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
 import CategoryList from '../components/CategoryList';
+import socialImage from '../../static/OpenGraphImage.png';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
 
@@ -31,7 +32,7 @@ const CategoryTemplate = ({ data, pageContext }: Props) => {
   const pageTitle = currentPage > 0 ? `Best ${category} - Page ${currentPage} - ${siteTitle}` : `Best ${category} Resources - ${siteTitle}`;
 
   return (
-    <Layout title={pageTitle} description={siteSubtitle}>
+    <Layout title={pageTitle} description={siteSubtitle} socialImage={socialImage}>
       <Sidebar />
       <Page title={category}>
         <CategoryList />
