@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar';
 import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
+import CategoryList from '../components/CategoryList';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
 
@@ -33,6 +34,7 @@ const CategoryTemplate = ({ data, pageContext }: Props) => {
     <Layout title={pageTitle} description={siteSubtitle}>
       <Sidebar />
       <Page title={category}>
+        <CategoryList />
         <Feed edges={edges} />
         <Pagination
           prevPagePath={prevPagePath}

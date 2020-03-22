@@ -19,7 +19,8 @@
         border-radius: 8px;
         transition: $transition-ease;
 
-        &:hover { 
+        &:hover,
+        &:active { 
             padding: 8px 16px;
             background-color: $color-blue-400;
             color: $color-blue-100;

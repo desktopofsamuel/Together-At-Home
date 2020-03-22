@@ -10,8 +10,8 @@ const CategoryList = () => {
 
   return (
     <div className={styles['list']}>
+        <Link className={styles['list__item']} to="/">All</Link>
           {categories.map((category) => (
-
               <Link className={styles['list__item']} key={category.fieldValue} to={`/category/${kebabCase(category.fieldValue)}/`}>
                 {category.fieldValue}
                 {/* ({category.totalCount}) */}

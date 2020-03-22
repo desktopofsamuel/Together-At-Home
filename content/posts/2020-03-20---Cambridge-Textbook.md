@@ -4,7 +4,7 @@ date: "2020-03-20T18:33:32.169Z"
 template: "post"
 draft: false
 slug: "free-access-to-cambridge-textbooks"
-category: "Books"
+category: "Education"
 tags:
   - "Cambridge"
   - "Textbooks"
@@ -16,4 +16,4 @@ socialImage: "/media/cambridge-press.png"
 ---
 **_Due to performance issues caused by unprecedented demand and reported misuse, we have had to temporarily remove the free access to textbooks._**
 
-Cambridge Press offered free online higher education textbooks and coronavirus research during the outbreak.
+Cambridge Press offered free access to 700 textbooks in the Cambridge Core collection, which is an extensive collection on all disciplines. It will be available until the end of May.

@@ -34,7 +34,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.list__item:hover {
+.list__item:hover, .list__item:active {
   padding: 8px 16px;
   background-color: #203c5f;
   color: #f3f3ff;
