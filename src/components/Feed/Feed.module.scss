@@ -2,6 +2,9 @@
 @import '../../assets/scss/mixins';
 
 .feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 24px;
 
   &__item {
     background-color: $color-blue-400;
@@ -9,7 +12,7 @@
     border-radius: 8px;
     max-width: 600px;
     margin: 0 auto;
-    @include margin-bottom(1);
+    @include margin-bottom(0);
 
     &:last-child {
       @include margin-bottom(.5);
@@ -120,16 +123,4 @@
 
   }
 
-}
-
-@include breakpoint-lg {
-  .feed {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 16px;
-
-    &__item {
-    @include margin-bottom(0);
-    }
-  }
 }

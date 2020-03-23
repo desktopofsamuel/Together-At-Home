@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faQuestionCircle, faRss } from '@fortawesome/pro-duotone-svg-icons';
+import { faQuestionCircle, faRss, faPen } from '@fortawesome/pro-duotone-svg-icons';
 import styles from './Sidebar.module.scss';
 
 type Props = {
@@ -22,7 +22,10 @@ const Sidebar = ({ isIndex }: Props) => {
           <a href="https://twitter.com/@tgtathomeclub" aria-label="Twitter"><div><FontAwesomeIcon icon={faTwitter}/></div><p>Twitter</p></a>
           <a href="https://tgtathome.club/rss.xml" aria-label="RSS"><div><FontAwesomeIcon icon={faRss}/></div><p>RSS</p></a>
         </div>
-        <a className={styles['sidebar__footer-report']} href="https://forms.gle/V1irZN92423dv83n7" target="_blank" ><div><FontAwesomeIcon icon={faQuestionCircle} /></div>Submit Your Resource</a>
+        <div className={styles['sidebar__footer-navigation']}>
+        <a href="https://forms.gle/V1irZN92423dv83n7" target="_blank" ><div><FontAwesomeIcon icon={faQuestionCircle} /></div>Submit Your Resource</a>
+        <Link to="/pages/about" target="_blank" ><div><FontAwesomeIcon icon={faPen} /></div>About</Link>
+        </div>
         <div className={styles['sidebar__footer-credit']}>Created by <a href="https://twitter.com/@desktopofsamuel" target="_blank">@desktopofsamuel</a></div>
       </div>
     </aside>

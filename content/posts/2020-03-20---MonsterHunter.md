@@ -15,4 +15,4 @@ endDate: "2020-03-24T23:59:00.169Z"
 deadLine: "Mar 18 - Apr 21"
 ---
 
-Capcom announced they are releasing best-selling PRG "Monster Hunter World" to all PlayStation Plus members. It's only available in Asia right now, but it may coming to the world soon.
+Capcom announced they are releasing best-selling PRG "Monster Hunter World" to all PlayStation Plus members. It's only available in Asia right now, but it may come to the world soon.
