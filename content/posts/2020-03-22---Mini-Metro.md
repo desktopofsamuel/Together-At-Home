@@ -10,6 +10,7 @@ tags:
   - "iOS"
 url: "https://apps.apple.com/us/app/mini-metro/id837860959"
 socialImage: "/media/mini-metro.png"
+deadLine: "Until Mar 27"
 ---
 
 Mini Metro is now free this week in the support of those working from home, under quarantine, and in social isolation, as announced by developer Dinosaur Polo Club.
