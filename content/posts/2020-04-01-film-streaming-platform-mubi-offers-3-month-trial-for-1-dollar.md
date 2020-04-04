@@ -10,6 +10,6 @@ tags:
   - Movies
   - Films
 url: 'https://mubi.com/'
-socialImage: "media/mubi.jpg"
+socialImage: "/media/mubi.jpg"
 ---
 MUBI, hand-picked film streaming platform, is opening up its indie films library for three months for $1.

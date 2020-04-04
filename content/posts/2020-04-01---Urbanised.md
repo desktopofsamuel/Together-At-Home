@@ -11,6 +11,7 @@ tags:
   - "Gary Hustwit"
 url: "https://www.ohyouprettythings.com/free"
 category: "Movies"
-socialImage: "media/urbanized.jpg"
+socialImage: "/media/urbanized.jpg"
+deadLine: "Until Apr 7"
 ---
 Filmmaker Gary Hustwit is streaming his documentaries for free, "Urbanized" is his third documentaries streaming.

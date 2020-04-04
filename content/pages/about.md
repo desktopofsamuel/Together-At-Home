@@ -21,7 +21,7 @@ This site is created using [GatsbyJS](https://www.gatsbyjs.org/?ref=togetheratho
 
 ### How can I support this project?
 
-- Upvote some of my reddit [posts](https://www.reddit.com/r/SideProject/comments/flqtaf/a_website_collects_all_free_online_courses_music/)
+- Upvote my post in [Reddit](https://www.reddit.com/r/SideProject/comments/flqtaf/a_website_collects_all_free_online_courses_music/) and [Product Hunt](https://www.producthunt.com/posts/together-at-home-club)
 - Share this website to your colleagues, friends and family when they are stuck at home
 - Feel free to support my work on [Buy Me A Coffee](https://www.buymeacoffee.com/m9oiINk)
 

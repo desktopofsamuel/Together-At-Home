@@ -11,6 +11,6 @@ category: Books
 tags:
   - Books
 url: 'https://www.haymarketbooks.org/blogs/112-ten-free-ebooks-from-haymarket-books'
-socialImage: "media/haymarket-books.jpg"
+socialImage: "/media/haymarket-books.jpg"
 ---
 Haymarket Books share 10 DRM free eBooks to encourage people staying at home and "turning to books in fight for collective liberation".
