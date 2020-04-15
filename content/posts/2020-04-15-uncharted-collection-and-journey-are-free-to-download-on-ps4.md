@@ -15,6 +15,7 @@ tags:
   - PS4
 url: >-
   https://blog.us.playstation.com/2020/04/14/announcing-the-play-at-home-initiative/
-socialImage: /media/download.svg
+socialImage: "/media/ps4.jpg"
+deadLine: "Until May 5"
 ---
 PlayStation is launching a new initiative, "Play At Home" with "Uncharted: The Nathan Drake Collection" and "Journey" free  to download starting from Apr 15 to May 5.
