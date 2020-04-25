@@ -7,7 +7,7 @@ date: 2020-04-25T14:11:53.569Z
 description: >-
   The Beatles member Ringo Starr announced "Yellow Submarine" singalong edition
   to be streamed live on Apr 25 9am PDT / 12pm EDT.
-category: 'Music, Movies'
+category: Music
 tags:
   - The Beatles
   - Music
